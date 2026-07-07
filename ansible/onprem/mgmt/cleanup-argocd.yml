@@ -33,13 +33,6 @@
         kubectl delete crd $(kubectl get crd | grep argoproj.io | awk '{print $1}') || true
       failed_when: false
 
-    - name: 5. 로컬 GitOps 매니페스트 파일 원복 (git restore)
-      ansible.builtin.shell: |
-        git restore {{ gitops_dir }}/argocd/applicationsets/
-      register: git_result
-      failed_when: false
-      changed_when: git_result.rc == 0
-
-    - name: 6. 정리 완료 메시지 출력
+    - name: 5. 정리 완료 메시지 출력
       ansible.builtin.debug:
-        msg: "========================================================== ArgoCD 리소스, 네임스페이스 및 로컬 파일 원복이 완료되었습니다! =========================================================="
+        msg: "========================================================== ArgoCD 리소스 및 네임스페이스 정리가 완료되었습니다! =========================================================="
