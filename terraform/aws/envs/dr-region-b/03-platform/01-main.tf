@@ -25,7 +25,7 @@ module "tailscale" {
   region       = "ap-northeast-1"
   auth_key     = var.tailscale_auth_key
 
-  envs       = "prod"
+  envs       = "dr"
 }
 
 # ---------------------------------------------------------
