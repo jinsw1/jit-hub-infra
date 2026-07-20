@@ -12,6 +12,8 @@ spec:
       labels:
         app: weather
     spec:
+      imagePullSecrets:
+        - name: harbor-pull
       {{- if (.Values.db.waitForReady | default true) }}
       initContainers:
       - name: wait-for-database

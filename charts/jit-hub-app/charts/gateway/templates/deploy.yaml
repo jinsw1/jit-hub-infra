@@ -12,6 +12,8 @@ spec:
       labels:
         app: gateway
     spec:
+      imagePullSecrets:
+        - name: harbor-pull
       containers:
       - name: gateway
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
