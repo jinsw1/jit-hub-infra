@@ -3,19 +3,24 @@
 
 ingressRule:
   namespace: "jit-hub"
-  host: "ccmall.shop"
+  #host: "ccmall.shop"
+  host: "infrastudy.store"
 
 gateway:
   replicaCount: 1
   image:
-    repository: "harbor.ccmall.shop/jit-hub/jit-hub-gateway"
-    tag: "seed"
+    #repository: "harbor.ccmall.shop/jit-hub/jit-hub-gateway"
+    #tag: "seed"
+    repository: "172.16.8.200:8080/jit-hub/jit-hub-gateway"
+    tag: "v1"
 
 auth:
   replicaCount: 1
   image:
-    repository: "harbor.ccmall.shop/jit-hub/auth-service"
-    tag: "seed"
+    #repository: "harbor.ccmall.shop/jit-hub/auth-service"
+    #tag: "seed"
+    repository: "172.16.8.200:8080/jit-hub/auth-service"
+    tag: "v1"    
   db:
     enabled: true
     loadBalancerIP: "172.16.8.47"
@@ -30,8 +35,10 @@ auth:
 weather:
   replicaCount: 1
   image:
-    repository: "harbor.ccmall.shop/jit-hub/weather-service"
-    tag: "seed"
+    #repository: "harbor.ccmall.shop/jit-hub/weather-service"
+    #tag: "seed"
+    repository: "172.16.8.200:8080/jit-hub/weather-service"
+    tag: "v1"
   db:
     enabled: true
     loadBalancerIP: "172.16.8.48"
@@ -46,8 +53,10 @@ weather:
 traffic:
   replicaCount: 1
   image:
-    repository: "harbor.ccmall.shop/jit-hub/traffic-service"
-    tag: "seed"
+    #repository: "harbor.ccmall.shop/jit-hub/traffic-service"
+    #tag: "seed"
+    repository: "172.16.8.200:8080/jit-hub/traffic-service"
+    tag: "v1"
   db:
     enabled: true
     loadBalancerIP: "172.16.8.49"
@@ -62,8 +71,10 @@ traffic:
 tourist:
   replicaCount: 1
   image:
-    repository: "harbor.ccmall.shop/jit-hub/tourist-service"
-    tag: "seed"
+    #repository: "harbor.ccmall.shop/jit-hub/tourist-service"
+    #tag: "seed"
+    repository: "172.16.8.200:8080/jit-hub/tourist-service"
+    tag: "v1"
   db:
     enabled: true
     loadBalancerIP: "172.16.8.50"

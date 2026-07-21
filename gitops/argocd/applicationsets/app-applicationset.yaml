@@ -21,9 +21,11 @@ spec:
     spec:
       project: jit-hub-project
       source:
-        repoURL: 'https://github.com/hacksungboo/jit-hub-infra'
-        #targetRevision: HEAD
-        targetRevision: feat/ci-cd-harbor # ci/cd 테스트용 (26.07.20 1930)
+        #repoURL: 'https://github.com/hacksungboo/jit-hub-infra'        
+        #targetRevision: feat/ci-cd-harbor # ci/cd 테스트용 (26.07.20 1930)
+        repoURL: 'https://github.com/jinsw1/jit-hub-infra'
+        targetRevision: HEAD
+
         path: charts/jit-hub-app
         helm:
           valueFiles:
