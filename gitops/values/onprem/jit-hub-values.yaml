@@ -3,19 +3,19 @@
 
 ingressRule:
   namespace: "jit-hub"
-  host: "leechs.shop"
+  host: "ccmall.shop"
 
 gateway:
   replicaCount: 1
   image:
-    repository: "changsiuuuu/jit-hub-gateway"
-    tag: "latest"
+    repository: "harbor.ccmall.shop/jit-hub/jit-hub-gateway"
+    tag: "seed"
 
 auth:
   replicaCount: 1
   image:
-    repository: "changsiuuuu/auth-service"
-    tag: "latest"
+    repository: "harbor.ccmall.shop/jit-hub/auth-service"
+    tag: "seed"
   db:
     enabled: true
     loadBalancerIP: "172.16.8.47"
@@ -30,8 +30,8 @@ auth:
 weather:
   replicaCount: 1
   image:
-    repository: "changsiuuuu/weather-service"
-    tag: "latest"
+    repository: "harbor.ccmall.shop/jit-hub/weather-service"
+    tag: "seed"
   db:
     enabled: true
     loadBalancerIP: "172.16.8.48"
@@ -46,8 +46,8 @@ weather:
 traffic:
   replicaCount: 1
   image:
-    repository: "changsiuuuu/traffic-service"
-    tag: "latest"
+    repository: "harbor.ccmall.shop/jit-hub/traffic-service"
+    tag: "seed"
   db:
     enabled: true
     loadBalancerIP: "172.16.8.49"
@@ -62,8 +62,8 @@ traffic:
 tourist:
   replicaCount: 1
   image:
-    repository: "changsiuuuu/tourist-service"
-    tag: "latest"
+    repository: "harbor.ccmall.shop/jit-hub/tourist-service"
+    tag: "seed"
   db:
     enabled: true
     loadBalancerIP: "172.16.8.50"
