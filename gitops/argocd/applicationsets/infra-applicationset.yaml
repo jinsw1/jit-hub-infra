@@ -36,7 +36,7 @@ spec:
       source:
         #repoURL: 'https://github.com/hacksungboo/jit-hub-infra'
         #targetRevision: feat/ci-cd-harbor # ci/cd 테스트용 (26.07.20 1930)
-        repoURL: 'https://github.com/hacksungboo/jit-hub-infra'
+        repoURL: 'https://github.com/jinsw1/jit-hub-infra'
         targetRevision: HEAD        
         # charts/cloudflared, charts/monitoring-stack, charts/ops에 각각 대응
         path: charts/{{chart}}
