@@ -82,6 +82,7 @@ promtail:
 # EKS 클러스터들의 remote_write/promtail을 받는 Ingress
 ingestIngress:
   enabled: true
-  domain: unzipp.cloud
+  #domain: unzipp.cloud
+  domain: grfana.infrastudy.store
   prometheusServiceName: onprem-monitoring-stack-ku-prometheus
   lokiServiceName: onprem-monitoring-stack-loki
