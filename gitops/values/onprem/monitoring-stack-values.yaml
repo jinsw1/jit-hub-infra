@@ -64,6 +64,13 @@ loki:
     path: "/nfs/shared/jithub-loki"   # NFS 경로
     storage: 50Gi
 
+  #임시추가
+  chunksCache:
+    enabled: false
+
+  resultsCache:
+    enabled: false    
+
 promtail:
   enabled: true
   config:
