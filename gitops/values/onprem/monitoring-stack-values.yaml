@@ -62,7 +62,8 @@ loki:
     enabled: true
     server: "172.16.8.203"        # NFS 서버 IP (실제 IP로 변경 필요)
     path: "/nfs/shared/jithub-loki"   # NFS 경로
-    storage: 50Gi
+    #storage: 50Gi
+    storage: 10Gi
 
   #임시추가
   chunksCache:
