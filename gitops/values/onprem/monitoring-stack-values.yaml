@@ -83,6 +83,6 @@ promtail:
 ingestIngress:
   enabled: true
   #domain: unzipp.cloud
-  domain: grfana.infrastudy.store
+  domain: infrastudy.store
   prometheusServiceName: onprem-monitoring-stack-ku-prometheus
   lokiServiceName: onprem-monitoring-stack-loki
