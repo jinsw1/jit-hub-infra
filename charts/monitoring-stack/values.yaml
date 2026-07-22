@@ -69,6 +69,12 @@ loki:
   write:
     replicas: 0
 
+  chunksCache:
+    enabled: false
+
+  resultsCache:
+    enabled: false    
+
 # 로그 수집기 - 모든 클러스터에서 활성화
 promtail:
   enabled: true
