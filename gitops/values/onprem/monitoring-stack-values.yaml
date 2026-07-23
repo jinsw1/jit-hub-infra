@@ -8,7 +8,7 @@ kube-prometheus-stack:
     service:
       type: LoadBalancer
       port: 9090
-      loadBalancerIP: 172.16.8.91  
+      loadBalancerIP: 172.16.8.32  
     prometheusSpec:
       externalLabels:
         cluster: onprem
@@ -31,7 +31,7 @@ kube-prometheus-stack:
     service:
       type: LoadBalancer
       port: 80
-      loadBalancerIP: 172.16.8.90
+      loadBalancerIP: 172.16.8.33
 
     sidecar:
       datasources:
@@ -80,7 +80,11 @@ loki:
 
   resultsCache:
     enabled: false    
-    
+
+lokiLoadBalancer:
+  enabled: true
+  ip: 172.16.8.34
+      
 promtail:
   enabled: true
   config:
