@@ -54,7 +54,7 @@ module "cloudflared_connector" {
   namespace    = "cloudflared"
   secret_name  = "cloudflared-token"
   tunnel_token = module.cloudflared_tunnel.tunnel_token
-  replicas     = 1   # 평시 0, 장애 시 1로 전환
+  replicas     = 0   # 평시 0, 장애 시 1로 전환
 
   depends_on = [module.cloudflared_tunnel]
 }

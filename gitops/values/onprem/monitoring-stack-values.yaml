@@ -5,6 +5,10 @@ kube-prometheus-stack:
   enabled: true
 
   prometheus:
+    service:
+      type: LoadBalancer
+      port: 9090
+      loadBalancerIP: 172.16.8.91  
     prometheusSpec:
       externalLabels:
         cluster: onprem
@@ -23,6 +27,12 @@ kube-prometheus-stack:
   grafana:
     enabled: true
     adminPassword: "admin"  # 운영 시 Secret으로 교체 필요
+
+    service:
+      type: LoadBalancer
+      port: 80
+      loadBalancerIP: 172.16.8.90
+
     sidecar:
       datasources:
         defaultDatasourceEnabled: false
