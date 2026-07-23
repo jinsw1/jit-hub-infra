@@ -19,11 +19,18 @@ module "cloudflared_tunnel" {
     # 관제용 (onprem 고정)
     {
       hostname = "argocd.${var.domain_name}"
-      service  = "https://argocd-server.argocd.svc.cluster.local:443"
+      service  = "http://argocd-server.argocd.svc.cluster.local:80"
+
+      #service  = "https://argocd-server.argocd.svc.cluster.local:443"
+      #  originRequest = {
+      #    noTLSVerify = true
+      #  }
     },
     {
       hostname = "grafana.${var.domain_name}"
-      service  = "http://grafana.monitoring.svc.cluster.local:80"
+      #service  = "http://grafana.monitoring.svc.cluster.local:80"
+      service  = "http://onprem-monitoring-stack-grafana.monitoring.svc.cluster.local:80"
+      
     }
   ]
 }

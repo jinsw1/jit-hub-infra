@@ -11,7 +11,8 @@ gateway:
   image:
     #repository: "harbor.ccmall.shop/jit-hub/jit-hub-gateway"
     #tag: "seed"
-    repository: "172.16.8.200:8080/jit-hub/jit-hub-gateway"
+    #repository: "172.16.8.200:8888/jit-hub/jit-hub-gateway"
+    repository: "harbor.infrastudy.store/jit-hub/jit-hub-gateway"
     tag: "v1"
 
 auth:
@@ -19,7 +20,8 @@ auth:
   image:
     #repository: "harbor.ccmall.shop/jit-hub/auth-service"
     #tag: "seed"
-    repository: "172.16.8.200:8080/jit-hub/auth-service"
+    #repository: "172.16.8.200:8888/jit-hub/auth-service"
+    repository: "harbor.infrastudy.store:8888/jit-hub/auth-service"
     tag: "v1"    
   db:
     enabled: true
@@ -37,7 +39,8 @@ weather:
   image:
     #repository: "harbor.ccmall.shop/jit-hub/weather-service"
     #tag: "seed"
-    repository: "172.16.8.200:8080/jit-hub/weather-service"
+    #repository: "172.16.8.200:8888/jit-hub/weather-service"
+    repository: "harbor.infrastudy.store/jit-hub/weather-service"
     tag: "v1"
   db:
     enabled: true
@@ -55,7 +58,8 @@ traffic:
   image:
     #repository: "harbor.ccmall.shop/jit-hub/traffic-service"
     #tag: "seed"
-    repository: "172.16.8.200:8080/jit-hub/traffic-service"
+    #repository: "172.16.8.200:8888/jit-hub/traffic-service"
+    repository: "harbor.infrastudy.store/jit-hub/traffic-service"
     tag: "v1"
   db:
     enabled: true
@@ -73,7 +77,8 @@ tourist:
   image:
     #repository: "harbor.ccmall.shop/jit-hub/tourist-service"
     #tag: "seed"
-    repository: "172.16.8.200:8080/jit-hub/tourist-service"
+    #repository: "172.16.8.200:8888/jit-hub/tourist-service"
+    repository: "harbor.infrastudy.store/jit-hub/tourist-service"
     tag: "v1"
   db:
     enabled: true
