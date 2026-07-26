@@ -39,7 +39,7 @@ module "cloudflared_connector" {
   namespace    = "cloudflared"
   secret_name  = "cloudflared-token"
   tunnel_token = module.cloudflared_tunnel.tunnel_token
-  replicas     = 0   # 평시 0, 장애 시 1로 전환
+  replicas     = 1   # 평시 0, 장애 시 1로 전환
 
   depends_on = [module.cloudflared_tunnel]
 }
@@ -72,7 +72,9 @@ resource "helm_release" "argocd" {
     set {
     name  = "configs.secret.argocdServerAdminPassword"
     # htpasswd (bcrypt) 형태로 변환하여 주입
-    value = bcrypt("jithub12") 
+    #value = bcrypt("jithub12") 
+
+    value = "$2b$12$DmnvZ7oQ5Gw4dIjajwfrr.lI6hv6ioDwx8gxB01VZGDZPVsq.PD12"
   }
   depends_on = [helm_release.ingress_nginx]
 }
