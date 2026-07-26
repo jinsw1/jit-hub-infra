@@ -1,3 +1,4 @@
+# modules/tailscale/main.tf
 resource "null_resource" "install_tailscale" {
 
   triggers = {

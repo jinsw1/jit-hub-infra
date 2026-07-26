@@ -1,4 +1,4 @@
-# tailscale-deployment.yaml 파일
+# ansible/aws/manifests/tailscale-deployment.yaml 파일
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

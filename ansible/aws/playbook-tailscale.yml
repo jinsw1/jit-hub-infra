@@ -1,3 +1,5 @@
+# ansible/aws/palybook-tailscale.yml
+
 ---
 - name: EKS 클러스터에 Tailscale Subnet Router 배포
   hosts: localhost
