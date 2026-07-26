@@ -8,7 +8,8 @@ module "cloudflared_tunnel" {
   cloudflare_zone_id    = var.cloudflare_zone_id
   tunnel_name             = "jit-hub-tunnel"
   domain_name              = var.domain_name
-  dns_records              = ["@", "argocd", "grafana"]
+  #dns_records              = ["@", "argocd", "grafana"]  
+  dns_records              = ["@"]
 
   ingress_rules = [
     # 서비스 트래픽 (평시 eks-a, 장애시 onprem, DR시 eks-b — 오리진은 replica로 스위칭)
@@ -16,15 +17,15 @@ module "cloudflared_tunnel" {
       hostname = var.domain_name
       service  = "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local:80"
     },
-    # 관제용 (onprem 고정)
-    {
-      hostname = "argocd.${var.domain_name}"
-      service  = "https://argocd-server.argocd.svc.cluster.local:443"
-    },
-    {
-      hostname = "grafana.${var.domain_name}"
-      service  = "http://grafana.monitoring.svc.cluster.local:80"
-    }
+    # # 관제용 (onprem 고정)
+    # {
+    #   hostname = "argocd.${var.domain_name}"
+    #   service  = "https://argocd-server.argocd.svc.cluster.local:443"
+    # },
+    # {
+    #   hostname = "grafana.${var.domain_name}"
+    #   service  = "http://grafana.monitoring.svc.cluster.local:80"
+    # }
   ]
 }
 
