@@ -71,7 +71,8 @@ resource "helm_release" "argocd" {
     set {
     name  = "configs.secret.argocdServerAdminPassword"
     # htpasswd (bcrypt) 형태로 변환하여 주입
-    value = bcrypt("jithub12") 
+    #value = bcrypt("jithub12") 
+    value = "$2b$12$vIxU9xzi9pY8y/U6a.aYHO/c/Tn1z.8e/GnKvOL7wNR3L5EUx7awu"
   }
   depends_on = [helm_release.ingress_nginx]
 }
