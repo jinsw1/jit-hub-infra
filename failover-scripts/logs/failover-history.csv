@@ -1,0 +1,8 @@
+timestamp,run_id,scenario,step,target,status,duration_sec,message
+2026-07-27T15:45:52+09:00,20260727-154552,switch-to-onprem,check_context,eks-a,FAILED,0,"exit_code=1"
+2026-07-27T15:45:52+09:00,20260727-154552,provision-dr,check_onprem_context,kubernetes-admin@kubernetes,SUCCESS,0,"completed"
+2026-07-27T15:45:52+09:00,20260727-154552,switch-to-onprem,total,switch-to-onprem,FAILED,0,"온프레미스 전환 실패 및 replica 롤백 수행"
+2026-07-27T15:45:52+09:00,20260727-154552,provision-dr,check_onprem_cluster,kubernetes-admin@kubernetes,SUCCESS,0,"completed"
+2026-07-27T15:46:03+09:00,20260727-154552,provision-dr,terraform_init_02-eks,02-eks,SUCCESS,11,"completed"
+2026-07-27T15:46:17+09:00,20260727-154552,provision-dr,terraform_apply_02-eks,02-eks,FAILED,14,"exit_code=1"
+2026-07-27T15:46:17+09:00,20260727-154552,provision-dr,total,provision-dr,FAILED,25,"02-eks Terraform apply 실패"

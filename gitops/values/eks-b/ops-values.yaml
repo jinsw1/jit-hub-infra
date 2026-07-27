@@ -25,8 +25,8 @@ karpenter:
 
   instanceTypes:   # 인스턴스 type
     - t3.small     # cpu 2, 2GB
-    - t3.medium    # cpu 2, 4GB
-    - t3.large     # cpu 2, 8GB
+    #- t3.medium    # cpu 2, 4GB
+    #- t3.large     # cpu 2, 8GB
 
   capacityTypes:   # 인스턴스 유형
     - on-demand

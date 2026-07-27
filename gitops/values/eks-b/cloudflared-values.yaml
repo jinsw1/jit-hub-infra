@@ -1,7 +1,7 @@
 # gitops/values/eks-b/cloudflared-values.yaml
 replicaCount: 0 # 평상시 Cold Standby 상태로 터널 비활성화 (DR Failover 발생 시 1로 승격)
-tunnelId: "xxxx-xxxx-xxxx-xxxx"
+tunnelId: "6be45600-f095-4844-b7d5-98dd51777dc9"
 credentialsSecret: "cloudflared-creds"
 ingress:
-  - hostname: "ccmall.shop"
+  - hostname: "infrastudy.store"
     service: http://gateway-service.jit-hub.svc.cluster.local:80
