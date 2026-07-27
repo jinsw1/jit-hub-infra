@@ -1,0 +1,519 @@
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-0c7943795daad04b6",
+            "OwnerId": "899957568205",
+            "RequesterId": "502454447449",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2026-07-26T10:49:41+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-05d9ab5a1455e7061",
+                                "EbsCardIndex": 0
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-45378995-500e-4c2d-0690-21208a67ef93-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::899957568205:instance-profile/hello-eks_9203443619903632476",
+                        "Id": "AIPA5DCNGWLG2WVGCJNKJ"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2026-07-26T10:49:40+00:00",
+                                "AttachmentId": "eni-attach-07ef0a411be213cc6",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-0da19d3a56c8c982b",
+                                    "GroupName": "hello-eks-node-20260726084546197900000001"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:a7:ba:bf:80:b1",
+                            "NetworkInterfaceId": "eni-0744e46ffd7853426",
+                            "OwnerId": "899957568205",
+                            "PrivateDnsName": "ip-10-0-2-45.ap-northeast-2.compute.internal",
+                            "PrivateIpAddress": "10.0.2.45",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-2-45.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.2.45"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-08e8b6461c2dc1e28",
+                            "VpcId": "vpc-002a3cccb595352f0",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-0da19d3a56c8c982b",
+                            "GroupName": "hello-eks-node-20260726084546197900000001"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-02e995246ba1d8d10"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-45378995-500e-4c2d-0690-21208a67ef93"
+                        },
+                        {
+                            "Key": "karpenter.k8s.aws/ec2nodeclass",
+                            "Value": "eks-a-nodeclass"
+                        },
+                        {
+                            "Key": "Environment",
+                            "Value": "eks-a"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "1"
+                        },
+                        {
+                            "Key": "karpenter.sh/nodeclaim",
+                            "Value": "eks-a-nodepool-dbqk8"
+                        },
+                        {
+                            "Key": "karpenter.sh/nodepool",
+                            "Value": "eks-a-nodepool"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "ip-10-0-2-45.ap-northeast-2.compute.internal"
+                        },
+                        {
+                            "Key": "karpenter.sh/managed-by",
+                            "Value": "hello-eks"
+                        },
+                        {
+                            "Key": "aws:eks:cluster-name",
+                            "Value": "hello-eks"
+                        },
+                        {
+                            "Key": "kubernetes.io/cluster/hello-eks",
+                            "Value": "owned"
+                        },
+                        {
+                            "Key": "ManagedBy",
+                            "Value": "karpenter"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2026-07-26T10:49:40+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false,
+                        "HiddenByDefault": false
+                    },
+                    "InstanceId": "i-0ce8d77925d909abf",
+                    "ImageId": "ami-0a5881a4fdaf0f621",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "PrivateDnsName": "ip-10-0-2-45.ap-northeast-2.compute.internal",
+                    "PublicDnsName": "",
+                    "StateTransitionReason": "",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t3.small",
+                    "LaunchTime": "2026-07-26T10:49:40+00:00",
+                    "Placement": {
+                        "AvailabilityZoneId": "apne2-az3",
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "ap-northeast-2c"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-08e8b6461c2dc1e28",
+                    "VpcId": "vpc-002a3cccb595352f0",
+                    "PrivateIpAddress": "10.0.2.45"
+                }
+            ]
+        },
+        {
+            "ReservationId": "r-0f845e1bd4464912b",
+            "OwnerId": "899957568205",
+            "RequesterId": "502454447449",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2026-07-26T10:30:11+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-059a0b2b09a44190e",
+                                "EbsCardIndex": 0
+                            }
+                        }
+                    ],
+                    "ClientToken": "fleet-c595099d-d224-66a5-8412-8128022f45b4-0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::899957568205:instance-profile/hello-eks_9203443619903632476",
+                        "Id": "AIPA5DCNGWLG2WVGCJNKJ"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2026-07-26T10:31:51+00:00",
+                                "AttachmentId": "eni-attach-011417725d9cb46a7",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 2,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-092b8015ccd0519ae",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-0da19d3a56c8c982b",
+                                    "GroupName": "hello-eks-node-20260726084546197900000001"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:a4:b6:b7:69:47",
+                            "NetworkInterfaceId": "eni-0c6483c500d0c2c41",
+                            "OwnerId": "899957568205",
+                            "PrivateDnsName": "ip-10-0-1-113.ap-northeast-2.compute.internal",
+                            "PrivateIpAddress": "10.0.1.113",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-1-113.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.113"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-195.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.195"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-183.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.183"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-107.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.107"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0d7429113a66fab05",
+                            "VpcId": "vpc-002a3cccb595352f0",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2026-07-26T10:30:10+00:00",
+                                "AttachmentId": "eni-attach-0a2b1e6601394a0ea",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-0da19d3a56c8c982b",
+                                    "GroupName": "hello-eks-node-20260726084546197900000001"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:7e:01:1e:0a:17",
+                            "NetworkInterfaceId": "eni-0f3483e5ca7ef6fe7",
+                            "OwnerId": "899957568205",
+                            "PrivateDnsName": "ip-10-0-1-81.ap-northeast-2.compute.internal",
+                            "PrivateIpAddress": "10.0.1.81",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-1-81.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.81"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-80.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.80"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-160.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.160"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-47.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.47"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0d7429113a66fab05",
+                            "VpcId": "vpc-002a3cccb595352f0",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        },
+                        {
+                            "Attachment": {
+                                "AttachTime": "2026-07-26T10:31:37+00:00",
+                                "AttachmentId": "eni-attach-07abca9123d4c3723",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 1,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "aws-K8S-i-092b8015ccd0519ae",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-0da19d3a56c8c982b",
+                                    "GroupName": "hello-eks-node-20260726084546197900000001"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:a6:18:69:3e:3b",
+                            "NetworkInterfaceId": "eni-0a52a24d684774e1a",
+                            "OwnerId": "899957568205",
+                            "PrivateDnsName": "ip-10-0-1-161.ap-northeast-2.compute.internal",
+                            "PrivateIpAddress": "10.0.1.161",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-1-161.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.161"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-244.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.244"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-151.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.151"
+                                },
+                                {
+                                    "Primary": false,
+                                    "PrivateDnsName": "ip-10-0-1-77.ap-northeast-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.1.77"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0d7429113a66fab05",
+                            "VpcId": "vpc-002a3cccb595352f0",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-0da19d3a56c8c982b",
+                            "GroupName": "hello-eks-node-20260726084546197900000001"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "karpenter.sh/nodeclaim",
+                            "Value": "eks-a-nodepool-5cjh9"
+                        },
+                        {
+                            "Key": "karpenter.sh/managed-by",
+                            "Value": "hello-eks"
+                        },
+                        {
+                            "Key": "kubernetes.io/cluster/hello-eks",
+                            "Value": "owned"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:version",
+                            "Value": "1"
+                        },
+                        {
+                            "Key": "aws:eks:cluster-name",
+                            "Value": "hello-eks"
+                        },
+                        {
+                            "Key": "ManagedBy",
+                            "Value": "karpenter"
+                        },
+                        {
+                            "Key": "aws:ec2:fleet-id",
+                            "Value": "fleet-c595099d-d224-66a5-8412-8128022f45b4"
+                        },
+                        {
+                            "Key": "aws:ec2launchtemplate:id",
+                            "Value": "lt-02e995246ba1d8d10"
+                        },
+                        {
+                            "Key": "karpenter.k8s.aws/ec2nodeclass",
+                            "Value": "eks-a-nodeclass"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "ip-10-0-1-81.ap-northeast-2.compute.internal"
+                        },
+                        {
+                            "Key": "Environment",
+                            "Value": "eks-a"
+                        },
+                        {
+                            "Key": "karpenter.sh/nodepool",
+                            "Value": "eks-a-nodepool"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2026-07-26T10:30:10+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false,
+                        "HiddenByDefault": false
+                    },
+                    "InstanceId": "i-092b8015ccd0519ae",
+                    "ImageId": "ami-0a5881a4fdaf0f621",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "PrivateDnsName": "ip-10-0-1-81.ap-northeast-2.compute.internal",
+                    "PublicDnsName": "",
+                    "StateTransitionReason": "",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t3.small",
+                    "LaunchTime": "2026-07-26T10:30:10+00:00",
+                    "Placement": {
+                        "AvailabilityZoneId": "apne2-az1",
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "ap-northeast-2a"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-0d7429113a66fab05",
+                    "VpcId": "vpc-002a3cccb595352f0",
+                    "PrivateIpAddress": "10.0.1.81"
+                }
+            ]
+        }
+    ]
+}
