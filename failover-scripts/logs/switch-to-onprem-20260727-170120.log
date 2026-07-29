@@ -1,7 +1,0 @@
-2026-07-27T17:01:20+09:00 [20260727-170120] [switch-to-onprem] [INFO] EKS-A → 온프레미스 긴급 트래픽 전환 시작
-2026-07-27T17:01:20+09:00 [20260727-170120] [switch-to-onprem] [INFO] STEP_START step=check_context target=eks-a
-2026-07-27T17:01:20+09:00 [20260727-170120] [switch-to-onprem] [ERROR] Kubernetes context가 존재하지 않습니다: eks-a
-2026-07-27T17:01:20+09:00 [20260727-170120] [switch-to-onprem] [ERROR] Kubernetes context가 존재하지 않습니다: eks-a
-2026-07-27T17:01:20+09:00 [20260727-170120] [switch-to-onprem] [ERROR] STEP_FAILED step=check_context target=eks-a duration=0s exit_code=1
-2026-07-27T17:01:20+09:00 [20260727-170120] [switch-to-onprem] [WARN] 온프레미스 전환 실패. 기존 replica 상태로 롤백 시작
-2026-07-27T17:01:20+09:00 [20260727-170120] [switch-to-onprem] [INFO] SCRIPT_END status=FAILED duration=0s message=온프레미스 전환 실패 및 replica 롤백 수행
