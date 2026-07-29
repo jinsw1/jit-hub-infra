@@ -11,7 +11,7 @@ gateway:
     #repository: "harbor.ccmall.shop/jit-hub/jit-hub-gateway"
     #tag: "79d959256720"
     repository: "harbor.infrastudy.store/jit-hub/jit-hub-gateway"
-    tag: "v1"
+    tag: "b1feccf470ce"
 auth:
   replicaCount: 1
   image:
@@ -52,7 +52,6 @@ tourist:
   db:
     enabled: false
     host: "postgres-gateway"
-
 # sLLM 분석 파이프라인(FastAPI+Ollama+poller)은 onprem에만 배포 (7/15 팀 결정)
 sllm:
   enabled: false
