@@ -8,6 +8,7 @@ module "cloudflared_tunnel" {
   cloudflare_zone_id    = var.cloudflare_zone_id
   tunnel_name             = "jit-hub-tunnel"
   domain_name              = var.domain_name
+  #dns_records              = ["@", "argocd", "grafana"]
   dns_records              = ["@", "argocd", "grafana"]
 
   ingress_rules = [
