@@ -8,7 +8,7 @@ gateway:
   replicaCount: 1
   image:
     repository: "harbor.infrastudy.store/jit-hub/jit-hub-gateway"
-    tag: "v1"
+    tag: "1662be50602f"
 auth:
   replicaCount: 1
   image:
@@ -69,7 +69,6 @@ tourist:
       nfs:
         server: "172.16.8.203"
         path: "/nfs/shared/jithub-touristdb"
-
 sllm:
   #enabled: false # sLLM 분석 파이프라인은 onprem에서만 활성화 (7/15 팀 결정)
   enabled: true # sLLM 분석 파이프라인은 onprem에서만 활성화 (7/15 팀 결정)
