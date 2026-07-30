@@ -8,7 +8,7 @@ gateway:
   replicaCount: 1
   image:
     repository: "harbor.infrastudy.store/jit-hub/jit-hub-gateway"
-    tag: "v1"
+    tag: "d4e2dce0bc03"
 auth:
   replicaCount: 1
   image:
